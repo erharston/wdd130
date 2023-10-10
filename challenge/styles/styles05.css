@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+}
+
+#title {
+    width: 100%;
+}
+
+main {
+    background-color: gray;
+}
+
+#desk{
+    width: 25%;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 3% auto;
+
+
+}
+
+#ball{
+    width: 25%;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 3% 3%;
+
+}
+
+#person{
+    width: 25%;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 3% auto;
+}
+
+.circles {
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
