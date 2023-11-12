@@ -231,6 +231,36 @@ footer .social img {
 
 
 
+/*Rivers Page*/
+.hero-rivers{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+.hero-box-rivers {
+    grid-column: 1/4;
+    grid-row:1/2;
+    z-index: -1;
+}
+
+.hero-img-rivers{
+    width: 100%;
+    margin-top: -100px;
+}
+
+.hero-rivers h1{
+    text-align: center;
+    color: white;
+}
+
+.river-img {
+    grid-column: 2/4;
+    grid-row:3/6;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
