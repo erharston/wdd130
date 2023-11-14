@@ -232,34 +232,138 @@ footer .social img {
 
 
 /*Rivers Page*/
-.hero-rivers{
+body{
+    font-family: Assistant, Arial, Helvetica, sans-serif;
+} 
+
+#hero-rivers{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
-}
+    grid-template-rows: 675px;
+    margin-top: -200px;
+ }
 
-.hero-box-rivers {
+ #hero-box-rivers{
     grid-column: 1/4;
-    grid-row:1/2;
     z-index: -1;
-}
+ }
 
-.hero-img-rivers{
+ #hero-img-rivers{
     width: 100%;
-    margin-top: -100px;
-}
+ }
 
-.hero-rivers h1{
+ #hero-msg-rivers h1{
     text-align: center;
+    margin-top: -275px;
     color: white;
+ }
+
+ #hero-msg-rivers{
+    grid-column: 2/3;
+ }
+
+ .home-title-rivers{
+    font-size: 2em;
+    font-family: "Lexend Deca", 'Trebuchet MS', sans-serif;
+ }
+
+ main{
+    background-color: white;
+ }
+
+ .salmon-river{
+    grid-column: 2/10;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 10px 10px 20px;
+    text-align: left;
+ }
+
+ .salmon-river h2{
+    grid-column: 1/9;
+    grid-row: 1/2;
+ }
+
+ .salmon-img{
+    grid-column: 1/5;
+    grid-row: 2/5;
+    height: auto;
+ }
+
+ .salmon-river ul{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    text-align: left;
+ }
+
+ .salmon-p{
+    grid-column: 5/9;
+    grid-row: 3/4;
+    text-align: left;
+ }
+
+ .salmon-button-box, .gray-button-box, .grand-button-box{
+    grid-column: 5/9;
+    grid-row: 4/5;
+    margin: 0 auto;
+ }
+
+.gray-canyon{
+    grid-column: 2/10;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
-.river-img {
-    grid-column: 2/4;
-    grid-row:3/6;
+.gray-canyon h2{
+    grid-column: 1/9;
+    grid-row: 1/2;
+ }
+
+.gray-img-box img{
+    grid-column: 1/5;
+    grid-row: 2/5;
 }
 
+.gray-text ul{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    text-align: left;
+ }
 
+ .gray-p{
+    grid-column: 5/9;
+    grid-row: 3/4;
+ }
+
+ .grand-canyon{
+    grid-column: 2/10;
+    grid-row:3/4;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+ }
+
+ .grand-canyon h2{
+    grid-column: 1/9;
+    grid-row: 1/2;
+ }
+
+.grand-canyon-box img{
+    grid-column: 1/5;
+    grid-row: 2/5;
+}
+
+.grand-text ul{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    text-align: left;
+ }
+
+ .grand-p{
+    grid-column: 5/9;
+    grid-row: 3/4;
+ }
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
