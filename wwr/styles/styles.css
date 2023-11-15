@@ -88,6 +88,7 @@ nav a:hover {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    
 }
 
 .card-img, .mountains {
@@ -272,32 +273,54 @@ body{
  }
 
  .salmon-river{
-    grid-column: 2/10;
     grid-row: 1/2;
+    padding-top: 100px;
+ }
+
+ .gray-canyon{
+    grid-row: 2/3;
+ }
+
+ .grand-canyon{
+    grid-row: 3/4;
+ }
+
+ .salmon-river, .gray-canyon, .grand-canyon{
+    grid-column: 2/10;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    padding: 20px 10px 10px 20px;
+    padding: 70px 60px 10px 60px;
     text-align: left;
  }
 
- .salmon-river h2{
+ .salmon-river h2, .gray-canyon h2, .grand-canyon h2{
     grid-column: 1/9;
     grid-row: 1/2;
+    font-family: "Lexend Deca", 'Trebuchet MS', sans-serif;
+    padding-bottom: 20px;
  }
 
- .salmon-img{
+ .salmon-img, .gray-img-box, .grand-canyon-box{
     grid-column: 1/5;
     grid-row: 2/5;
     height: auto;
  }
 
- .salmon-river ul{
+ .river-img, .gray-canyon-img, .grand-canyon-img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    padding-right: 50px;
+ }
+
+ .salmon-river ul, .gray-canyon ul, .grand-canyon ul{
     grid-column: 5/9;
     grid-row: 2/3;
     text-align: left;
+    background-color: white;
  }
 
- .salmon-p{
+ .salmon-p, .gray-p, .grand-p{
     grid-column: 5/9;
     grid-row: 3/4;
     text-align: left;
@@ -306,64 +329,19 @@ body{
  .salmon-button-box, .gray-button-box, .grand-button-box{
     grid-column: 5/9;
     grid-row: 4/5;
-    margin: 0 auto;
+    text-align: center;
  }
 
-.gray-canyon{
-    grid-column: 2/10;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-.gray-canyon h2{
-    grid-column: 1/9;
-    grid-row: 1/2;
+ .map{
+    background-color: #8ba352;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
  }
 
-.gray-img-box img{
-    grid-column: 1/5;
-    grid-row: 2/5;
-}
-
-.gray-text ul{
-    grid-column: 5/9;
-    grid-row: 2/3;
-    text-align: left;
- }
-
- .gray-p{
-    grid-column: 5/9;
-    grid-row: 3/4;
- }
-
- .grand-canyon{
-    grid-column: 2/10;
-    grid-row:3/4;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
- }
-
- .grand-canyon h2{
-    grid-column: 1/9;
-    grid-row: 1/2;
- }
-
-.grand-canyon-box img{
-    grid-column: 1/5;
-    grid-row: 2/5;
-}
-
-.grand-text ul{
-    grid-column: 5/9;
-    grid-row: 2/3;
-    text-align: left;
- }
-
- .grand-p{
-    grid-column: 5/9;
-    grid-row: 3/4;
- }
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
