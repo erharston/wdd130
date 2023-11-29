@@ -141,14 +141,14 @@ nav a:hover{
     grid-row: 2/3;
 }
 
-.creativity-img, .gross-img, .mental-img, .vestibular-img, .attention-img {
+.creativity-img, .gross-img, .mental-img, .vestibular-img, .attention-img, .social-img {
     width: 300px;
     height: 500px;
     object-fit: cover;
     z-index: -1;
 }
 
-.creativity, .gross, .mental, .vestibular, .attention {
+.creativity, .gross, .mental, .vestibular, .attention, .social {
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: repeat(4, 125px);
@@ -209,6 +209,17 @@ nav a:hover{
     grid-row: 1/5;
 }
 
+.social-img {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    
+}
+
+.social{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
 h1 {
     font-family: Mansalva, Georgia, serif;
     color: #D77F33;
@@ -233,24 +244,31 @@ footer{
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
+    font-family: Rubik, Helvetica, sans-serif;
     align-items: center;
-    font-family: Rubik, Helvetica, sans-serif;;
 }
 
 footer a{
-    color: white;
+    color: #FEFAE0;
     text-decoration: none;
 }
 
 footer a:hover {
     background-color: #283618;
+    padding: 15px 20px;
+    margin-top: 50px;
     border-radius: 5px;
-    text-decoration: none;
-    padding: 20px 20px;
 }
 
 footer p {
     font-size: 1.2em;
+}
+
+footer .social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
 }
 
 
