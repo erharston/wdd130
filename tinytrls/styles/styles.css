@@ -223,10 +223,11 @@ nav a:hover{
 h1 {
     font-family: Mansalva, Georgia, serif;
     color: #D77F33;
-    padding-left: 15px;
-    padding-right: 15px;
+
     font-size: 2em;
 }
+
+
 
 h2{
     grid-column: 1/2;
